@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../images/bg-pattern-intro-mobile.svg"), linear-gradient(hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  backface-visibility: visible;
+  background-position: -20rem -15rem, center;
+  border-bottom-left-radius: 100px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+header nav .logo {
+  padding-left: 2rem;
+}
+header nav .ham {
+  margin-right: 2rem;
+}
+header nav .wrapper {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: fit-content;
+}
+header nav .nav_items {
+  width: 85%;
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+  margin: 0 auto;
+  animation: navBar 1s ease-in-out;
+  color: hsl(240deg, 10%, 16%);
+}
+@keyframes navBar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header nav .nav_items .user_login {
+  padding: 20px;
+  display: grid;
+  grid-auto-flow: row;
+}
+header nav .nav_items .user_login button {
+  margin: 0.2em;
+  padding: 0.7em 2em;
+  border: none;
+  font-size: 1.2rem;
+  font-family: Overpass;
+  font-weight: 600;
+  border-radius: 100vmax;
+}
+header nav .nav_items .user_login button:nth-child(1) {
+  background-color: transparent;
+  color: hsl(240deg, 10%, 16%);
+}
+header nav .nav_items .user_login button:nth-child(2) {
+  background-image: linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  color: white;
+}
+header nav .nav_items i {
+  width: 84%;
+  border-top: 0.1px solid gray;
+  padding: 0;
+}
+header nav .hiddenItems {
+  display: none;
+}
+header nav .hidden {
+  display: none;
+}
+header nav .nav_item {
+  padding: 0 0 1.2em 0;
+  font-size: 16px;
+  font-family: Overpass;
+  font-weight: 600;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav .nav_item p {
+  text-align: center;
+}
+header nav .nav_item p:nth-child(1) {
+  margin-top: 1.2em;
+}
+header nav .nav_item .hamItems {
+  display: block;
+  border-radius: 10px;
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  margin: 1rem;
+  display: none;
+  color: hsl(207deg, 13%, 34%);
+}
+header nav .nav_item .hamItems li {
+  list-style: none;
+  text-align: center;
+  padding: 0.5rem;
+}
+header nav .nav_item .active {
+  display: block;
+}
+header .hero-section {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3.6em;
+}
+header .hero-section h2 {
+  color: white;
+  font-family: Overpass;
+  font-size: 2.1rem;
+}
+header .hero-section p {
+  color: white;
+  font-family: Overpass;
+  font-size: 1.4rem;
+}
+header .hero-section button {
+  border: none;
+  font-family: Overpass;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0.3rem;
+  padding: 0.7em 1.2em;
+  border-radius: 100vmax;
+}
+header .hero-section div button:nth-child(1) {
+  background-color: white;
+  color: hsl(353deg, 100%, 62%);
+}
+header .hero-section div button:nth-child(2) {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=header.css.map */

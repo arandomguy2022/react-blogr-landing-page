@@ -1,0 +1,204 @@
+@use './variables/color'as *;
+@use './variables/fonts'as*;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100vw;
+}
+
+header {
+    height: 100vh;
+    background-image: url('../images/bg-pattern-intro-mobile.svg'), linear-gradient($very-light-red, $light-red);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
+    backface-visibility: visible;
+    background-position: -20rem -15rem, center;
+    border-bottom-left-radius: 100px;
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+
+        .logo {
+            padding-left: 2rem;
+        }
+
+        .ham {
+            margin-right: 2rem;
+        }
+
+        .wrapper {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height: fit-content;
+        }
+
+        .nav_items {
+            width: 85%;
+            background-color: white;
+            border-radius: 10px;
+            display: grid;
+            justify-items: center;
+            margin: 0 auto;
+            animation: navBar 1s ease-in-out;
+            color: $very-dark-black-blue;
+
+            @keyframes navBar {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+
+            }
+
+            .user_login {
+                padding: 20px;
+                display: grid;
+                grid-auto-flow: row;
+            }
+
+            .user_login button {
+                margin: .2em;
+                padding: .7em 2em;
+                border: none;
+                font-size: 1.2rem;
+                font-family: $overpass;
+                font-weight: 600;
+                border-radius: 100vmax;
+            }
+
+            .user_login button:nth-child(1) {
+                background-color: transparent;
+                color: $very-dark-black-blue;
+            }
+
+            .user_login button:nth-child(2) {
+                background-image: linear-gradient(to right, $very-light-red, $light-red);
+                color: white;
+
+            }
+
+            i {
+                width: 84%;
+                border-top: .1px solid gray;
+                padding: 0;
+            }
+        }
+
+        .hiddenItems {
+            display: none;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+
+        .nav_item {
+            padding: 0 0 1.2em 0;
+            font-size: $body-font-size;
+            font-family: $overpass;
+            font-weight: 600;
+            width: 85%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            p {
+                text-align: center;
+
+            }
+
+            p:nth-child(1) {
+                margin-top: 1.2em;
+            }
+
+            .hamItems {
+                display: block;
+                border-radius: 10px;
+                background-color: rgb(238, 238, 238);
+                width: 100%;
+                margin: 1rem;
+                display: none;
+                color: $very-dark-grayish-blue;
+
+                li {
+                    list-style: none;
+                    text-align: center;
+                    padding: .5rem;
+                }
+            }
+
+            .active {
+                display: block;
+            }
+
+
+        }
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 3.6em;
+
+        h2 {
+            color: white;
+            font-family: $overpass;
+            font-size: 2.1rem;
+        }
+
+        p {
+            color: white;
+            font-family: $overpass;
+            font-size: 1.4rem;
+        }
+
+        button {
+            border: none;
+            font-family: $overpass;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0 .3rem;
+            padding: 0.7em 1.2em;
+            border-radius: 100vmax;
+        }
+
+        div {
+            button:nth-child(1) {
+                background-color: white;
+                color: $light-red;
+
+            }
+
+            button:nth-child(2) {
+                border: 1px solid white;
+                color: white;
+                background-color: transparent;
+            }
+        }
+    }
+}

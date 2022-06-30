@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+footer {
+  height: 700px;
+  margin-top: 0rem;
+  background-color: hsl(240deg, 10%, 16%);
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer img {
+  padding: 40px;
+}
+footer .main-item p {
+  color: white;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+footer .subItems {
+  list-style: none;
+  text-align: center;
+  font-family: Overpass;
+  font-weight: 300;
+  color: hsl(240deg, 2%, 79%);
+  font-size: 1rem;
+}
+footer .subItems li {
+  margin: 0.2em;
+}
+@media (min-width: 1200px) {
+  footer img {
+    padding-left: 10rem;
+  }
+}
+@media (min-width: 700px) {
+  footer {
+    width: 100%;
+    flex-direction: row;
+    height: 350px;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3em 0;
+    padding-bottom: 0;
+  }
+  footer img {
+    padding-top: 1em;
+  }
+  footer .main-item p {
+    text-align: left;
+    margin-bottom: 2rem;
+    margin-left: 0em;
+  }
+  footer .subItems li {
+    text-align: left;
+    margin: 1rem 0;
+  }
+  footer .pages {
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    grid-auto-flow: column;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

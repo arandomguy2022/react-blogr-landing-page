@@ -1,0 +1,79 @@
+@use './variables/color'as *;
+@use './variables/fonts'as*;
+
+footer {
+    height: 700px;
+    margin-top: 0rem;
+    background-color: $very-dark-black-blue;
+    border-top-right-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        padding: 40px;
+
+    }
+
+    .main-item p {
+        color: white;
+        margin: 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .subItems {
+        list-style: none;
+        text-align: center;
+        font-family: $overpass;
+        font-weight: 300;
+        color: $neutral-grayish-blue;
+        font-size: 1rem;
+
+        li {
+            margin: .2em;
+        }
+    }
+
+    @media (min-width:1200px) {
+        img {
+            padding-left: 10rem;
+        }
+    }
+
+    @media (min-width:700px) {
+
+        width: 100%;
+        flex-direction: row;
+        height: 350px;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 3em 0;
+        padding-bottom: 0;
+
+
+        img {
+            padding-top: 1em;
+        }
+
+        .main-item p {
+            text-align: left;
+            margin-bottom: 2rem;
+            margin-left: 0em;
+        }
+
+        .subItems li {
+            text-align: left;
+            margin: 1rem 0;
+        }
+
+        .pages {
+            width: 100%;
+            display: grid;
+            justify-content: space-around;
+            grid-auto-flow: column;
+        }
+    }
+
+}

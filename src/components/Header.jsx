@@ -56,7 +56,7 @@ export default function Header() {
               }}
             >
               <p>
-                Company{" "}
+                Company
                 <span>
                   <img src={arrow} alt="" />
                 </span>
@@ -96,8 +96,8 @@ export default function Header() {
             </div>
             <i></i>
             <div className="user_login">
-              <button>Login</button>
-              <button>Sign Up</button>
+              <button className="login">Login</button>
+              <button className="signup">Sign Up</button>
             </div>
           </div>
         </div>
